@@ -235,10 +235,10 @@ class Edge implements Comparable<Edge> {
 // A class to represent the maze world
 class MazeWorld extends World {
     //Constants 
-    public static int WORLD_HEIGHT = 20;
-    public static int WORLD_WIDTH = 20;
-    public static int NODE_SIZE =  20;
-    Random ran = new Random(10);
+    public static int WORLD_HEIGHT = 50;
+    public static int WORLD_WIDTH = 50;
+    public static int NODE_SIZE =  16;
+    Random ran;
     ArrayList<Node> frontN;
     ArrayList<Edge> frontE;
     ArrayList<ArrayList<Node>> nodes;
@@ -250,6 +250,7 @@ class MazeWorld extends World {
     MazeWorld(int searchType, int bias) {
         this.searchType = searchType;
         this.bias = bias;
+        this.ran = new Random();
         initWorld();
     }
     // EFFECT: Initializes the edges, creates the minimum spanning tree
