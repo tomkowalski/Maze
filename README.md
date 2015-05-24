@@ -29,8 +29,8 @@ Run Maze.jar
 		- A new maze is created
 	- Use S to toggele showing the path from the start to the currently affected node in the maze
 		- This works in all 3 types of searchs
-- Changing in MazeWorld NODE_SIZE changes the displayed size maze Cells
-- Changing in MazeWorld WORLD_HEIGHT changes the number of cells in the maze horizontally
-- Changing in MazeWorld WORLD_WIDTH changes the number of cells in the maze vertically
+- Changing NODE_SIZE in MazeWorld changes the displayed size maze Cells
+- Changing WORLD_HEIGHT in MazeWorld changes the number of cells in the maze horizontally
+- Changing WORLD_WIDTH in MazeWorld changes the number of cells in the maze vertically
 
 To run source use javalib.jar and run main from main.java in src.
