@@ -1,5 +1,6 @@
 # Maze
 A Java based Maze Creator and Solver
+
 Created as a homework project by Tom Kowalski and Leandro Taveras 
 Instructions:
 Run Maze.jar
