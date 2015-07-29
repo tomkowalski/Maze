@@ -1,6 +1,6 @@
 # Maze
-A Maze Creator and Solver
-
+A Java based Maze Creator and Solver
+Created as a homework project by Tom Kowalski and Leandro Taveras 
 Instructions:
 Run Maze.jar
 - The inital type of world shown is a manual search world that is unbiased.
