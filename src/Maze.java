@@ -1,9 +1,3 @@
-// Assignment 10
-// Kowalski Tom
-// kowalski
-// Taveras Leandro
-// Taverasl
-
 import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,6 +36,7 @@ class Empty<T> implements IList<T> {
     public int size() {
         return 0;
     }
+	// Returns an Iterator for ILists
     public Iterator<T> iterator() {
         return new IListIterator<T>(this);
     }
@@ -107,11 +102,11 @@ class IListIterator<T> implements Iterator<T> {
 }
 // A class to represent a node in the maze
 class Node {
-    int x;
-    int y;
-    IList<Edge> edges;
-    boolean front;
-    boolean visited;
+    int x; // X coordinate
+    int y; // Y coordinate
+    IList<Edge> edges; // List of edges
+    boolean front; // Is this at the front
+    boolean visited; // Has this node been visited yet
     Node(int x, int y) {
         this(x, y, new Empty<Edge>());
     }
